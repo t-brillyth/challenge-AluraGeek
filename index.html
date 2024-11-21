@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="./assets/favicon.ico">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.svg" alt="Logo">
+    </header>
+    <main>
+        <section class="list-product">
+            <h2>Lista Productos:</h2>
+            <div data-product class="products-container">
+                <div class="card">
+                    <img src="./assets/producto1.svg" />
+                    <div class="card-container--info">
+                        <p>Nombre</p>
+                        <div class="card-container--value">
+                            <p>$ 00.00</p>
+                            <img src="./assets/icon_delete.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-product">
+            <h1>Agregar Producto:</h1>
+            <form id="form" data-form>
+                <input data-name type="text" id="nombre" placeholder="Nombre del Producto" required>
+                <input data-price type="number" id="precio" placeholder="Precio del Producto" required>
+                <input data-image type="number" id="imagen" placeholder="imagen del Producto" required>
+                <span data-error class="mensajeError"></span>
+                <div class="button-group">
+                    <button type="submit" class="addProduct">Agregar Producto</button>
+                    <button data-button="delete" class="button-delete">Limpiar Campos</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-container gradient-background">
+        <div>
+            <img src="./assets/Logo.svg" />
+        </div>
+        <p> Desarollado por Tania Forero</p>
+        <small>Alura Latam 2024</small>
+    </footer>
+
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
