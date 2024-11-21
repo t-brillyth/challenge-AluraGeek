@@ -33,7 +33,7 @@
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/
+   git clone https://github.com/t-brillyth/challenge-AluraGeek
    ```
 
 2. Navega al directorio del proyecto:
